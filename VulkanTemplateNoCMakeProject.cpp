@@ -1,12 +1,33 @@
 ﻿// VulkanTemplateNoCMakeProject.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-#include <iostream>
+import std;
+import Glfw;
+import VulkanTutorial;
+
+constexpr uint32_t WIDTH = 800;
+constexpr uint32_t HEIGHT = 600;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // ウィンドウの作成
+    Glfw::Window myWindow{
+        {
+            .width = WIDTH,
+            .height = HEIGHT,
+            .name = "vulkan"
+        }
+    };
+
+    // Vulkanのチュートリアルへ
+    HelloTriangleApplication tutorial{ &myWindow };
+    tutorial.run();
+
+    // ウィンドウ待機
+    myWindow.wait_until_close();
 }
+
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー

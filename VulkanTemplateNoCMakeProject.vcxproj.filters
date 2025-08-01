@@ -18,5 +18,23 @@
     <ClCompile Include="VulkanTemplateNoCMakeProject.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="glfw_window\Glfw.ixx">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="glfw_window\Glfw.Window.ixx">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="glfw_window\Glfw.WindowSettings.ixx">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="$(VULKAN_SDK)\Include\vulkan\vulkan.cppm">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="vulkan\VulkanTutorial.ixx">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PropertySheet.props" />
   </ItemGroup>
 </Project>
